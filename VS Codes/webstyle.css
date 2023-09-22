@@ -1,0 +1,83 @@
+
+*{
+    margin-top:0;
+    padding: 0;
+}
+
+.backgrounds {
+    bottom: 20px;
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100vh;
+
+
+    
+
+}
+
+h1{
+    font-size: 40px;
+    color: gold;
+    animation-name:head;
+    animation-duration: 5s;
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+@keyframes head {
+    0%{color: gold;}
+    25%{color: green;}
+    50%{color: orange;}
+    75%{color: yellow;}
+    100%{color: red;}   
+}
+.p1{
+    font-size: 25px;
+    color: goldenrod;
+    position: absolute;
+    top: 200px;
+    right:50px;
+    word-wrap: break-word;
+    text-indent:unset;
+    text-shadow: 3px  3px black;
+}
+p {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    color: gold;
+    animation-name:paragraph;
+    animation-duration: 5s;
+    top: 100px;
+    right: 420px;
+    text-shadow: 3px  3px black;
+}
+    @keyframes paragraph {
+        0%{color: gold;}
+        25%{color: green; }
+        50%{color: white;}
+        75%{color: orange;}
+        100%{color: gold;}
+}
+.container {
+    height: auto;
+    width: 40%;
+    border-radius: 2%;
+    border: 1px solid white;
+    overflow: hidden;
+    
+}
+.container img{
+    width: 100%;
+    display: block;
+    transition: transform 3s ease;
+}
+.container:hover img{
+    transform: scale(1.25);
+}
+footer {
+    color: gold;
+    position: absolute;
+    bottom: 70px;
+}
